@@ -1,0 +1,88 @@
+CRITICAL - 2024-05-05 03:47:35 --> ErrorException: Attempt to read property "errno" on bool
+[Method: GET, Route: check-db-connection]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 580.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(580): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\xampp\\htdocs\\Code_with\\system\\Database\\MySQLi\\Connection.php', 580)
+ 2 APPPATH\Controllers\ToDoApp\To_do_list.php(62): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->checkDbConnection()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 03:57:38 --> ErrorException: Attempt to read property "errno" on bool
+[Method: GET, Route: check-db-connection]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 580.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(580): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\xampp\\htdocs\\Code_with\\system\\Database\\MySQLi\\Connection.php', 580)
+ 2 APPPATH\Controllers\ToDoApp\To_do_list.php(62): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->checkDbConnection()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 03:58:21 --> ErrorException: Attempt to read property "errno" on bool
+[Method: GET, Route: check-db-connection]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 580.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(580): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\xampp\\htdocs\\Code_with\\system\\Database\\MySQLi\\Connection.php', 580)
+ 2 APPPATH\Controllers\ToDoApp\To_do_list.php(62): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->checkDbConnection()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 09:59:35 --> ArgumentCountError: Too few arguments to function App\Controllers\ToDoApp\To_do_list::update(), 0 passed in C:\xampp\htdocs\Code_with\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: task/update]
+in APPPATH\Controllers\ToDoApp\To_do_list.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 11:15:13 --> ErrorException: Undefined variable $task
+[Method: GET, Route: task/edit/3]
+in APPPATH\Views\todo_list\edit.php on line 38.
+ 1 APPPATH\Views\todo_list\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('todo_list/edit', [], true)
+ 5 APPPATH\Controllers\ToDoApp\To_do_list.php(37): view('todo_list/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 11:16:52 --> ErrorException: Undefined variable $task
+[Method: GET, Route: task/edit/3]
+in APPPATH\Views\todo_list\edit.php on line 42.
+ 1 APPPATH\Views\todo_list\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('todo_list/edit', [], true)
+ 5 APPPATH\Controllers\ToDoApp\To_do_list.php(37): view('todo_list/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 12:05:27 --> ErrorException: Undefined variable $task
+[Method: GET, Route: task/edit/5]
+in APPPATH\Views\todo_list\edit.php on line 45.
+ 1 APPPATH\Views\todo_list\edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Code_with\\app\\Views\\todo_list\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('todo_list/edit', [], true)
+ 5 APPPATH\Controllers\ToDoApp\To_do_list.php(37): view('todo_list/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ToDoApp\To_do_list->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ToDoApp\To_do_list))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-05 12:29:34 --> ErrorException: Declaration of App\Models\To_do_app\TaskModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $row = null): bool
+[Method: GET, Route: task]
+in APPPATH\Models\To_do_app\TaskModel.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
